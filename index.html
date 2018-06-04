@@ -13,16 +13,20 @@
   <div id="root"></div>
   <script type=text/babel>
     (() => {
-      const name = 'tofu';
-      
+      function showMessage() {
+        alert('Hello');
+      }
+  
       ReactDOM.render(
-        <div>
-          <p>Hello!</p>
-          <p>{name.toUpperCase()}</p>
-        </div>,
+        //<div className="box"></div>,
+        //<div style={{width:100, height:100, backgroundColor:'tomato'}}></div>,
+        
+        <div style={{width:100, height:100, backgroundColor:'tomato'}} onClick={showMessage}></div>,
         document.getElementById('root')
       );
     })();
   </script>	
+
+
 </body>
 </html>
